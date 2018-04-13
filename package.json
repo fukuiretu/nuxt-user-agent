@@ -1,0 +1,10 @@
+{
+  "name": "nuxt-user-agent",
+  "version": "0.0.1",
+  "description": "hoge",
+  "main": "index.js",
+  "repository": "https://github.com/fukuiretu/nuxt-user-agent",
+  "author": "fukuiretu <fukuiretu@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
