@@ -1,6 +1,6 @@
 {
   "name": "nuxt-user-agent",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Nuxt.js module for handling User-Agent.",
   "keywords": [
     "Nuxt.js",

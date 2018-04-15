@@ -57,7 +57,7 @@ asyncData(context) {
 
 ```
 methods: {
-  fetchSomething() {
+  something() {
     const deviceType = this.$ua.deviceType()
     this.deviceType = deviceType
   }
@@ -70,7 +70,7 @@ methods: {
 // In store
 {
   actions: {
-    getIP ({ commit }) {
+    getDeviceType ({ commit }) {
       const deviceType = this.$ua.deviceType()
       commit('SET_DEVICE_TYPE', deviceType)
     }
