@@ -1,10 +1,18 @@
 {
   "name": "nuxt-user-agent",
   "version": "0.0.1",
-  "description": "hoge",
-  "main": "index.js",
+  "description": "Nuxt.js module for handling User-Agent.",
+  "keywords": [
+    "Nuxt.js",
+    "nuxt",
+    "module",
+    "UserAgent"
+  ],
+  "main": "lib/module.js",
   "repository": "https://github.com/fukuiretu/nuxt-user-agent",
   "author": "fukuiretu <fukuiretu@gmail.com>",
   "license": "MIT",
-  "private": false
+  "dependencies": {
+    "woothee": "^1.7.0"
+  }
 }
