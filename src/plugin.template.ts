@@ -1,58 +1,58 @@
-import { NuxtContext } from './nuxt'
-import * as woothee from 'woothee'
+import { NuxtContext } from "./nuxt";
+import * as woothee from "woothee";
 
 const DEFAULT_USER_AGENT =
-  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36";
 
-const ANDROID_MOBILE = /Android.+Mobi(le)?/
+const ANDROID_MOBILE = /Android.+Mobi(le)?/;
 
 class UA {
-  private _ua: string
-  private _parsed: woothee.UserAgent
+  private _ua: string;
+  private _parsed: woothee.UserAgent;
 
   constructor(ua: string) {
-    this._ua = ua
-    this._parsed = woothee.parse(ua)
+    this._ua = ua;
+    this._parsed = woothee.parse(ua);
   }
 
   original() {
-    return this._ua
+    return this._ua;
   }
 
   deviceType() {
-    return this._parsed.category
+    return this._parsed.category;
   }
 
   os() {
-    return this._parsed.os
+    return this._parsed.os;
   }
 
   osVersion() {
-    return this._parsed.os_version
+    return this._parsed.os_version;
   }
 
   browser() {
-    return this._parsed.name
+    return this._parsed.name;
   }
 
   browserVersion() {
-    return this._parsed.version
+    return this._parsed.version;
   }
 
   browserVendor() {
-    return this._parsed.vendor
+    return this._parsed.vendor;
   }
 
   isFromIphone() {
-    return this.os() === 'iPhone'
+    return this.os() === "iPhone";
   }
 
   isFromIpad() {
-    return this.os() === 'iPad'
+    return this.os() === "iPad";
   }
 
   isFromIpod() {
-    return this.os() === 'iPod'
+    return this.os() === "iPod";
   }
 
   isFromIos() {
@@ -60,59 +60,59 @@ class UA {
       this.isFromIphone() ||
       this.isFromIpad() ||
       this.isFromIpod() ||
-      this.os() == 'iOS'
-    )
+      this.os() == "iOS"
+    );
   }
 
   isFromAndroid() {
-    return this.os() === 'Android' && ANDROID_MOBILE.test(this._ua)
+    return this.os() === "Android" && ANDROID_MOBILE.test(this._ua);
   }
 
   isFromAndroidTablet() {
-    return this.os() === 'Android' && !ANDROID_MOBILE.test(this._ua)
+    return this.os() === "Android" && !ANDROID_MOBILE.test(this._ua);
   }
 
   ifFromAndroidOs() {
-    return this.isFromAndroid() || this.isFromAndroidTablet()
+    return this.isFromAndroid() || this.isFromAndroidTablet();
   }
 
   isFromWindowsPhone() {
-    return this.os() === 'Windows Phone OS'
+    return this.os() === "Windows Phone OS";
   }
 
   isFromPc() {
-    return this.deviceType() === 'pc'
+    return this.deviceType() === "pc";
   }
 
   isFromSmartphone() {
-    return this.deviceType() === 'smartphone'
+    return this.deviceType() === "smartphone";
   }
 
   isFromMobilephone() {
-    return this.deviceType() === 'mobilephone'
+    return this.deviceType() === "mobilephone";
   }
 
   isFromAppliance() {
-    return this.deviceType() === 'appliance'
+    return this.deviceType() === "appliance";
   }
 
   isFromCrawler() {
-    return this.deviceType() === 'crawler'
+    return this.deviceType() === "crawler";
   }
 
   isFromTablet() {
-    return this.isFromIpad() || this.isFromAndroidTablet()
+    return this.isFromIpad() || this.isFromAndroidTablet();
   }
 }
 
 export default (ctx: NuxtContext, inject: (prop: string, val: any) => void) => {
-  let userAgent = DEFAULT_USER_AGENT
-  if (typeof ctx.req !== 'undefined') {
-    userAgent = ctx.req.headers!['user-agent'] as string // FIXME: Better case handling - 20181125 Shin Ando
-  } else if (typeof navigator !== 'undefined') {
-    userAgent = navigator.userAgent
+  let userAgent = DEFAULT_USER_AGENT;
+  if (typeof ctx.req !== "undefined") {
+    userAgent = ctx.req.headers!["user-agent"] as string; // FIXME: Better case handling - 20181125 Shin Ando
+  } else if (typeof navigator !== "undefined") {
+    userAgent = navigator.userAgent;
   }
 
-  ctx.$ua = new UA(userAgent)
-  inject('ua', new UA(userAgent))
-}
+  ctx.$ua = new UA(userAgent);
+  inject("ua", new UA(userAgent));
+};
