@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "strict": true,
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "lib": ["esnext"],
+    "outDir": "lib"
+  },
+  "include": ["src/*.js"]
+}
