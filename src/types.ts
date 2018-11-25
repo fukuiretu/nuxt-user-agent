@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { Store, ActionTree } from "vuex";
+import { Store } from "vuex";
 import { Route } from "vue-router";
 import { RequestOptions, ServerResponse } from "http";
 

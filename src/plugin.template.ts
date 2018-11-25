@@ -1,4 +1,4 @@
-import { NuxtContext } from "./nuxt";
+import { NuxtContext } from "./types";
 import * as woothee from "woothee";
 
 const DEFAULT_USER_AGENT =
