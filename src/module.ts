@@ -1,5 +1,6 @@
 import * as path from "path";
 import { ModuleContext } from "./types";
+export { UA } from "./plugin.template";
 
 module.exports = function nuxtUserAgent() {
   const _this: ModuleContext = this as any; // Force cast this context.

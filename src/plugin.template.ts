@@ -6,7 +6,7 @@ const DEFAULT_USER_AGENT =
 
 const ANDROID_MOBILE = /Android.+Mobi(le)?/;
 
-class UA {
+export class UA {
   private _ua: string;
   private _parsed: woothee.UserAgent;
 
