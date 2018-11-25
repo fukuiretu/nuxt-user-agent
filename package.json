@@ -17,11 +17,24 @@
     "lint": "tslint src/*.ts",
     "lint:fix": "tslint src/*.ts --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "woothee": "^1.7.0"
   },
   "devDependencies": {
     "@types/node": "^10.12.10",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
     "tslint": "^5.11.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.1.6",
