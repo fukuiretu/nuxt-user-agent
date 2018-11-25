@@ -23,7 +23,6 @@ export interface NuxtContext {
   error: (params: { statusCode: number; message: string }) => void;
   nuxtState: any;
   beforeNuxtRender: any;
-  addPlugin: (args: { src: string; fileName: string }) => void;
   $ua: any;
 }
 
