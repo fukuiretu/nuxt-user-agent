@@ -2,6 +2,7 @@ import Vue from "vue";
 import { Store } from "vuex";
 import { Route } from "vue-router";
 import { RequestOptions, ServerResponse } from "http";
+import * as woothee from "woothee";
 
 type StoreState = any;
 
@@ -30,3 +31,5 @@ export interface NuxtContext {
 export interface ModuleContext {
   addPlugin: (args: { src: string; fileName: string }) => void;
 }
+
+export { UserAgent } from "woothee";
