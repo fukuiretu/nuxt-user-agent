@@ -35,7 +35,7 @@ Install with npm:
 
 nuxt.config.js
 
-```
+```js
 module.exports = {
   modules: [
     'nuxt-user-agent',
@@ -49,7 +49,7 @@ module.exports = {
 
 ##### asyncData
 
-```
+```js
 asyncData(context) {
   const deviceType = context.$ua.deviceType()
   return { deviceType }
@@ -58,7 +58,7 @@ asyncData(context) {
 
 ##### methods/created/mounted/etc
 
-```
+```js
 methods: {
   something() {
     const deviceType = this.$ua.deviceType()
@@ -69,7 +69,7 @@ methods: {
 
 ##### Store actions
 
-```
+```js
 // In store
 {
   actions: {
@@ -83,7 +83,7 @@ methods: {
 
 ##### template
 
-```
+```vue
 <template>
   <section>
     <div v-if="$ua.isFromPc()">
