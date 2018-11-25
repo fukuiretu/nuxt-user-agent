@@ -15,7 +15,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint src/*.ts",
-    "lint:fix": "tslint src/*.ts --fix"
+    "lint:fix": "tslint src/*.ts --fix",
+    "prepublish": "yarn build"
   },
   "husky": {
     "hooks": {
