@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "nuxt-ts": "^2.4.0",
-    "nuxt-user-agent": "https://github.com/andoshin11/nuxt-user-agent#enhancement/ts-implementation"
+    "nuxt-user-agent": "latest"
   },
   "devDependencies": {
     "tslint": "^5.12.1",
