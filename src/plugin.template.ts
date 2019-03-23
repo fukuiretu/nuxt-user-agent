@@ -85,7 +85,7 @@ export class UA {
   }
 
   isFromSmartphone() {
-    return this.deviceType() === "smartphone";
+    return this.deviceType() === "smartphone" && !this.isFromTablet();
   }
 
   isFromMobilephone() {
