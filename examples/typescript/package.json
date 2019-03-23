@@ -1,0 +1,22 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint": "tslint --project .",
+    "lint:fix": "tslint --project . --fix"
+  },
+  "dependencies": {
+    "nuxt-ts": "^2.4.0",
+    "nuxt-user-agent": "latest"
+  },
+  "devDependencies": {
+    "tslint": "^5.12.1",
+    "tslint-eslint-rules": "^5.4.0"
+  }
+}
