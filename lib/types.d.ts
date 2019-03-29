@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import Vue from "vue";
 import { Store } from "vuex";
 import { Route } from "vue-router";

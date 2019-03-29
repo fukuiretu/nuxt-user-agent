@@ -64,7 +64,7 @@ export class UA {
     );
   }
 
-  isFromAndroid() {
+  isFromAndroidMobile() {
     return this.os() === "Android" && ANDROID_MOBILE.test(this._ua);
   }
 
@@ -73,7 +73,7 @@ export class UA {
   }
 
   ifFromAndroidOs() {
-    return this.isFromAndroid() || this.isFromAndroidTablet();
+    return this.isFromAndroidMobile() || this.isFromAndroidTablet() || this.os() == "Android";
   }
 
   isFromWindowsPhone() {
