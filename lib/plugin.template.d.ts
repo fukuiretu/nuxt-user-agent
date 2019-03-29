@@ -16,7 +16,7 @@ export declare class UA {
     isFromIos(): boolean;
     isFromAndroid(): boolean;
     isFromAndroidTablet(): boolean;
-    ifFromAndroidOs(): boolean;
+    isFromAndroidOs(): boolean;
     isFromWindowsPhone(): boolean;
     isFromPc(): boolean;
     isFromSmartphone(): boolean;
