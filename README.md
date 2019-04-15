@@ -122,8 +122,9 @@ methods: {
 |     isFromIpad      | boolean |     true      |
 |     isFromIpod      | boolean |     true      |
 |      isFromIos      | boolean |     true      |
-|    isFromAndroid    | boolean |     true      |
+| isFromAndroidMobile | boolean |     true      |
 | isFromAndroidTablet | boolean |     true      |
+|   isFromAndroidOs   | boolean |     true      |
 | isFromWindowsPhone  | boolean |     true      |
 |      isFromPc       | boolean |     true      |
 |  isFromSmartphone   | boolean |     true      |
