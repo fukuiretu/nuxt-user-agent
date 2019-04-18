@@ -4,16 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
     "lint": "tslint --project .",
     "lint:fix": "tslint --project . --fix"
   },
   "dependencies": {
-    "nuxt-ts": "^2.4.0",
-    "nuxt-user-agent": "latest"
+    "@nuxt/typescript": "^2.6.2",
+    "nuxt": "^2.6.2",
+    "nuxt-user-agent": "latest",
+    "ts-node": "^8.1.0"
   },
   "devDependencies": {
     "tslint": "^5.12.1",
