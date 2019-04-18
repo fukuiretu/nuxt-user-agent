@@ -3,7 +3,11 @@
     "baseUrl": ".",
     "noImplicitThis": true,
     "esModuleInterop": true,
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
     "jsx": "preserve",
+    "jsxFactory": "h",
     "types": ["@types/node", "@nuxt/vue-app"]
   }
 }

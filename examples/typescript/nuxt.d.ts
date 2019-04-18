@@ -1,4 +1,4 @@
-import { UA } from "nuxt-user-agent";
+import { UA } from "nuxt-user-agent/lib/types";
 
 declare module "@nuxt/vue-app/types/index" {
   interface Context {
