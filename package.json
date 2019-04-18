@@ -9,7 +9,6 @@
     "UserAgent"
   ],
   "main": "lib/module.js",
-  "types": "./lib/module.d.ts",
   "repository": "https://github.com/fukuiretu/nuxt-user-agent",
   "author": "fukuiretu",
   "license": "MIT",
