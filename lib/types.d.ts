@@ -2,6 +2,7 @@ import Vue from "vue";
 import { Store } from "vuex";
 import { Route } from "vue-router";
 import { RequestOptions, ServerResponse } from "http";
+import { UA } from "./plugin.template";
 declare type StoreState = any;
 export interface NuxtContext {
     app: Vue;
@@ -32,4 +33,4 @@ export interface ModuleContext {
         fileName: string;
     }) => void;
 }
-export {};
+export { UA };
