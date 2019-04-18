@@ -2,6 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "noImplicitThis": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
     "types": ["@types/node", "@nuxt/vue-app"]
   }
 }
