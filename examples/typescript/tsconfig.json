@@ -1,5 +1,4 @@
 {
-  "extends": "@nuxt/typescript",
   "compilerOptions": {
     "baseUrl": ".",
     "noImplicitThis": true,
