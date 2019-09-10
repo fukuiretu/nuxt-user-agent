@@ -1835,9 +1835,9 @@ which@^1.2.10, which@^1.2.9:
     isexe "^2.0.0"
 
 woothee@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/woothee/-/woothee-1.8.1.tgz#150140a58cff48f7ce8f350cb6f16e2dfda58b13"
-  integrity sha512-0dItYaWRp/Q085x61xlN0G3VTkViPDKGfgBwTB2IAgAC3xg37+6EMLpkhvxh7V6aQ/UsJr1WK+7oWquW9ta+kQ==
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/woothee/-/woothee-1.10.1.tgz#cc38e74969efc9c20083ba93bb5df30b7cd0e9fe"
+  integrity sha512-UjQSKaOyphSqaKR5JqScCUuK3ETW0YXODOBY0Hrr3DcJ765SQ1vEUQrI/rGrbpZ1jKHc3Yx8F89oY0NNmSo33Q==
 
 wrap-ansi@^3.0.1:
   version "3.0.1"
