@@ -1,4 +1,4 @@
-import { NuxtContext } from "./types";
+import { Context } from "@nuxt/types";
 import * as woothee from "woothee";
 
 const DEFAULT_USER_AGENT =
@@ -105,7 +105,7 @@ export class UA {
   }
 }
 
-export default (ctx: NuxtContext, inject: (prop: string, val: any) => void) => {
+export default (ctx: Context, inject: (prop: string, val: any) => void) => {
   let userAgent = DEFAULT_USER_AGENT;
   if (typeof ctx.req !== "undefined") {
     userAgent = ctx.req.headers!["user-agent"] as string; // FIXME: Better case handling - 20181125 Shin Ando

@@ -1,4 +1,4 @@
-import { NuxtContext } from "./types";
+import { Context } from "@nuxt/types";
 export declare class UA {
     private _ua;
     private _parsed;
@@ -25,5 +25,5 @@ export declare class UA {
     isFromCrawler(): boolean;
     isFromTablet(): boolean;
 }
-declare const _default: (ctx: NuxtContext, inject: (prop: string, val: any) => void) => void;
+declare const _default: (ctx: Context, inject: (prop: string, val: any) => void) => void;
 export default _default;
